@@ -9,25 +9,26 @@ let sumEl = document.getElementById("sum-el")
 let cardsEl = document.getElementById("cards-el")
 
 function startGame() {
-    cardsEl.textContent = "Cards: " + firstCard + ", " + secondCard
+    renderGame()
+}
+
+function renderGame() {
+    cardsEl.textContent = "Cards: " + firstCard + " " + secondCard
     sumEl.textContent = "Sum: " + sum
-    if (sum < 21) {
+    if (sum <= 20) {
         message = "Do you want to draw a new card?"
-    }
-    else if (sum === 21) {
+    } else if (sum === 21) {
         message = "You've got Blackjack!"
         hasBlackJack = true
-    }
-    else {
+    } else {
         message = "You're out of the game!"
         isAlive = false
     }
-
     messageEl.textContent = message
 }
 
 function newCard() {
-    let newCard = 7
+    let newCard = 8
     sum += newCard
-    startGame()
+    renderGame()
 }
