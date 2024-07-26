@@ -1,6 +1,6 @@
 # Blackjack Game
 
-This is a simple Blackjack game developed as part of the Scrimba JavaScript course. The game is deployed on GitHub Pages and can be played [here](https://samuelmideksa.github.io/blackjack/).
+This is a simple Blackjack game developed as part of the Scrimba [Learn JavaScript](https://v2.scrimba.com/learn-javascript-c0v) course. The game is deployed on GitHub Pages and can be played [here](https://samuelmideksa.github.io/blackjack/).
 
 ## Table of Contents
 
